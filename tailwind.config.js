@@ -3,10 +3,22 @@ module.exports = {
   theme: {
     extend: {
       animation: {
+        bell: "bell 2s infinite linear",
         blob: "blob 7s infinite",
         tilt: "tilt 10s infinite linear",
       },
       keyframes: {
+        bell: {
+          "0%, 50%, 100%": {
+            transform: "rotate(0deg)"
+          },
+          "25%": {
+            transform: "rotate(20deg)"
+          },
+          "75%": {
+            transform: "rotate(-20deg)"
+          }
+        },
         tilt: {
           "0%, 50%, 100%": {
             transform: "rotate(0deg)"
